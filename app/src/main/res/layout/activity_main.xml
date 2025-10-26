@@ -19,8 +19,7 @@
         android:id="@+id/textViewEmpty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your fridge is empty.
-Tap + to add an item."
+        android:text="@string/fridge_empty"
         android:textSize="18sp"
         android:textColor="#555"
         android:gravity="center"
@@ -34,7 +33,7 @@ Tap + to add an item."
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
-        android:contentDescription="Add new item"
+        android:contentDescription="@string/add_new_item"
         android:src="@drawable/ic_add"
         app:backgroundTint="?attr/colorPrimary"
         app:tint="@android:color/white" />

@@ -30,7 +30,7 @@
                     android:id="@+id/textViewItemName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Item Name"
+                    android:text="@string/item_name"
                     android:textSize="18sp"
                     android:textColor="@android:color/black"
                     android:textStyle="bold" />
@@ -39,7 +39,7 @@
                     android:id="@+id/textViewQuantity"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=" (1)"
+                    android:text="@string/temp_num"
                     android:textSize="16sp"
                     android:textColor="#555" />
             </LinearLayout>
@@ -48,7 +48,7 @@
                 android:id="@+id/textViewExpiryDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Expires: YYYY-MM-DD"
+                android:text="@string/expires_yyyy_mm_dd"
                 android:textSize="14sp"
                 android:textColor="#333" />
         </LinearLayout>
@@ -57,7 +57,7 @@
             android:id="@+id/textViewDaysLeft"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5 days"
+            android:text="@string/_5_days"
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="@color/design_default_color_primary" />
