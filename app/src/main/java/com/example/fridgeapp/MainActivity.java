@@ -69,8 +69,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
         fridgeViewModel.getAllItems().observe(this, items -> {
-            adapter.submitList(items);
-            checkEmptyView();
+            adapter.submitList(items, this::checkEmptyView);
         });
 
         fab.setOnClickListener(view -> {
