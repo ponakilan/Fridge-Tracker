@@ -20,4 +20,6 @@
     <string name="_1">1</string>
     <string name="one">1</string>
     <string name="your_fridge_items">Your Fridge Items</string>
+    <string name="generate_recipes">Generate recipes</string>
+    <string name="your_suggested_recipe">Your Suggested Recipe</string>
 </resources>

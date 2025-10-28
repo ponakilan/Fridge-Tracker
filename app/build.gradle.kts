@@ -60,4 +60,6 @@ dependencies {
     // ViewModel and LiveData
     implementation("androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version")
     implementation("androidx.lifecycle:lifecycle-livedata:$lifecycle_version")
+
+    implementation("io.noties.markwon:core:4.6.2")
 }

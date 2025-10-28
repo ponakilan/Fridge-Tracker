@@ -11,6 +11,9 @@
     <!-- Request permission to run at boot to reschedule alarms -->
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
+    <!-- Request permission to use the internet -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -36,6 +39,11 @@
         <activity
             android:name=".AddItemActivity"
             android:label="Add New Item"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- Activity for AI recipe generation -->
+        <activity android:name=".RecipeGeneratorActivity"
+            android:label="AI Recipe Generator"
             android:parentActivityName=".MainActivity" />
 
         <!-- BroadcastReceiver that handles the alarm and triggers the notification -->

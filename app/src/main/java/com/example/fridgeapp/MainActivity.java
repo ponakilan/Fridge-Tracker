@@ -6,6 +6,7 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,7 +18,6 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -50,9 +50,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//
-//        MaterialToolbar toolbar = findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
+
+        FloatingActionButton generateRecipeButton = findViewById(R.id.generateRecipeButton);
+        generateRecipeButton.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, RecipeGeneratorActivity.class);
+            startActivity(intent);
+        });
 
         new NotificationHelper(this);
 
