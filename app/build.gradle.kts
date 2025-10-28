@@ -34,6 +34,10 @@ android {
     buildFeatures {
         viewBinding = true
     }
+
+    packagingOptions {
+        resources.excludes.add("META-INF/DEPENDENCIES")
+    }
 }
 
 val room_version = "2.6.1"
@@ -62,4 +66,5 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata:$lifecycle_version")
 
     implementation("io.noties.markwon:core:4.6.2")
+    implementation("com.openai:openai-java:4.6.1")
 }
